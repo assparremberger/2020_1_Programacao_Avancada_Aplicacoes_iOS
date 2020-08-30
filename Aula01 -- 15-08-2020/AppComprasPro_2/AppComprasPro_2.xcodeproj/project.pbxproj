@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BC0243424D0B55A4AB30841 /* Pods_AppComprasPro_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE25E5D75136E6168F201BBE /* Pods_AppComprasPro_2.framework */; };
+		DC2311DB24EF9A5C00D74B43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC2311DA24EF9A5C00D74B43 /* GoogleService-Info.plist */; };
+		DC5C68F024E878CE005DD88C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5C68EF24E878CE005DD88C /* AppDelegate.swift */; };
+		DC5C68F224E878CE005DD88C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5C68F124E878CE005DD88C /* ViewController.swift */; };
+		DC5C68F524E878CE005DD88C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5C68F324E878CE005DD88C /* Main.storyboard */; };
+		DC5C68F724E878D0005DD88C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5C68F624E878D0005DD88C /* Assets.xcassets */; };
+		DC5C68FA24E878D0005DD88C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5C68F824E878D0005DD88C /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B31FF87B0FBB8B1735A5B01 /* Pods-AppComprasPro_2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppComprasPro_2.debug.xcconfig"; path = "Target Support Files/Pods-AppComprasPro_2/Pods-AppComprasPro_2.debug.xcconfig"; sourceTree = "<group>"; };
+		2079B0CEB026A15D979ED0CD /* Pods-AppComprasPro_2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppComprasPro_2.release.xcconfig"; path = "Target Support Files/Pods-AppComprasPro_2/Pods-AppComprasPro_2.release.xcconfig"; sourceTree = "<group>"; };
+		AE25E5D75136E6168F201BBE /* Pods_AppComprasPro_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppComprasPro_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC2311DA24EF9A5C00D74B43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DC5C68EC24E878CE005DD88C /* AppComprasPro_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppComprasPro_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5C68EF24E878CE005DD88C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC5C68F124E878CE005DD88C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC5C68F424E878CE005DD88C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC5C68F624E878D0005DD88C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC5C68F924E878D0005DD88C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC5C68FB24E878D0005DD88C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC5C68E924E878CE005DD88C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC0243424D0B55A4AB30841 /* Pods_AppComprasPro_2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90089D28BD36F7A951B80006 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B31FF87B0FBB8B1735A5B01 /* Pods-AppComprasPro_2.debug.xcconfig */,
+				2079B0CEB026A15D979ED0CD /* Pods-AppComprasPro_2.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9A8D703473BF84CFCBB6CA25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE25E5D75136E6168F201BBE /* Pods_AppComprasPro_2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC5C68E324E878CE005DD88C = {
+			isa = PBXGroup;
+			children = (
+				DC5C68EE24E878CE005DD88C /* AppComprasPro_2 */,
+				DC5C68ED24E878CE005DD88C /* Products */,
+				90089D28BD36F7A951B80006 /* Pods */,
+				9A8D703473BF84CFCBB6CA25 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC5C68ED24E878CE005DD88C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC5C68EC24E878CE005DD88C /* AppComprasPro_2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC5C68EE24E878CE005DD88C /* AppComprasPro_2 */ = {
+			isa = PBXGroup;
+			children = (
+				DC5C68EF24E878CE005DD88C /* AppDelegate.swift */,
+				DC5C68F124E878CE005DD88C /* ViewController.swift */,
+				DC5C68F324E878CE005DD88C /* Main.storyboard */,
+				DC5C68F624E878D0005DD88C /* Assets.xcassets */,
+				DC5C68F824E878D0005DD88C /* LaunchScreen.storyboard */,
+				DC5C68FB24E878D0005DD88C /* Info.plist */,
+				DC2311DA24EF9A5C00D74B43 /* GoogleService-Info.plist */,
+			);
+			path = AppComprasPro_2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC5C68EB24E878CE005DD88C /* AppComprasPro_2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC5C68FE24E878D0005DD88C /* Build configuration list for PBXNativeTarget "AppComprasPro_2" */;
+			buildPhases = (
+				935BD9195429334432E91B93 /* [CP] Check Pods Manifest.lock */,
+				DC5C68E824E878CE005DD88C /* Sources */,
+				DC5C68E924E878CE005DD88C /* Frameworks */,
+				DC5C68EA24E878CE005DD88C /* Resources */,
+				D2B0D10FA081DF8889A183A9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppComprasPro_2;
+			productName = AppComprasPro_2;
+			productReference = DC5C68EC24E878CE005DD88C /* AppComprasPro_2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC5C68E424E878CE005DD88C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Prof. Adalto";
+				TargetAttributes = {
+					DC5C68EB24E878CE005DD88C = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = DC5C68E724E878CE005DD88C /* Build configuration list for PBXProject "AppComprasPro_2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC5C68E324E878CE005DD88C;
+			productRefGroup = DC5C68ED24E878CE005DD88C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC5C68EB24E878CE005DD88C /* AppComprasPro_2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC5C68EA24E878CE005DD88C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5C68FA24E878D0005DD88C /* LaunchScreen.storyboard in Resources */,
+				DC2311DB24EF9A5C00D74B43 /* GoogleService-Info.plist in Resources */,
+				DC5C68F724E878D0005DD88C /* Assets.xcassets in Resources */,
+				DC5C68F524E878CE005DD88C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		935BD9195429334432E91B93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppComprasPro_2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2B0D10FA081DF8889A183A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppComprasPro_2/Pods-AppComprasPro_2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppComprasPro_2/Pods-AppComprasPro_2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppComprasPro_2/Pods-AppComprasPro_2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC5C68E824E878CE005DD88C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5C68F224E878CE005DD88C /* ViewController.swift in Sources */,
+				DC5C68F024E878CE005DD88C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC5C68F324E878CE005DD88C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC5C68F424E878CE005DD88C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC5C68F824E878D0005DD88C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC5C68F924E878D0005DD88C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC5C68FC24E878D0005DD88C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC5C68FD24E878D0005DD88C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC5C68FF24E878D0005DD88C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B31FF87B0FBB8B1735A5B01 /* Pods-AppComprasPro_2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58WGDGEECX;
+				INFOPLIST_FILE = AppComprasPro_2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.pro.adalto.AppComprasPro-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC5C690024E878D0005DD88C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2079B0CEB026A15D979ED0CD /* Pods-AppComprasPro_2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58WGDGEECX;
+				INFOPLIST_FILE = AppComprasPro_2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.pro.adalto.AppComprasPro-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC5C68E724E878CE005DD88C /* Build configuration list for PBXProject "AppComprasPro_2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5C68FC24E878D0005DD88C /* Debug */,
+				DC5C68FD24E878D0005DD88C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC5C68FE24E878D0005DD88C /* Build configuration list for PBXNativeTarget "AppComprasPro_2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5C68FF24E878D0005DD88C /* Debug */,
+				DC5C690024E878D0005DD88C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC5C68E424E878CE005DD88C /* Project object */;
+}
