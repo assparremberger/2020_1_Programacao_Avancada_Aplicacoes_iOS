@@ -14,6 +14,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if event?.subtype == UIEvent.EventSubtype.motionShake{
+            print("Movimentou")
+        }
+    }
 
 
 }

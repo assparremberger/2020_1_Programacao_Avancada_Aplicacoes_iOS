@@ -12,7 +12,7 @@ import MapKit
 class AlarmeViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     var localAlarme: CLLocation!
-    
+    var localizadorManager: CLLocationManager!
 
     @IBOutlet weak var mapa: MKMapView!
     override func viewDidLoad() {
@@ -24,18 +24,27 @@ class AlarmeViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         gesto.minimumPressDuration = 1
         mapa.addGestureRecognizer(gesto)
         
+        
+        
     }
     
-    func configurarGerenciador(){
-        let locationManager = CLLocationManager()
+    @IBAction func localizar(_ sender: Any) {
+        let lat = CLLocationDegrees(exactly: -30.032660)!
+        let lon = CLLocationDegrees(exactly: -51.223132)!
         
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
+        let local = CLLocation(latitude: lat, longitude: lon)
+        self.locationManager( self.localizadorManager, didUpdateLocations: [local] )
+    }
+    func configurarGerenciador(){
+        localizadorManager = CLLocationManager()
+        
+        localizadorManager.delegate = self
+        localizadorManager.desiredAccuracy = kCLLocationAccuracyBest
+        localizadorManager.requestWhenInUseAuthorization()
+        localizadorManager.startUpdatingLocation()
         
    //     localAtual = locationManager.location
-        self.setarMapa(localizacao:  locationManager.location! )
+        self.setarMapa(localizacao:  localizadorManager.location! )
         
     }
     
@@ -43,26 +52,34 @@ class AlarmeViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         
         self.setarMapa( localizacao: locations.last! )
         
-        localAlarme = locations.last!
-        
-        
+  //      localAlarme = locations.last!
+        print("Mudou de posicao")
+        verificarAlarme(localAtual: locations.last!)
         
     }
     
     func verificarAlarme(localAtual: CLLocation){
+        
+        print("Entrou na funcao")
         if self.localAlarme != nil {
             
-            let distanciaAlarme: Double = 0.5 / 111.12
+            print("Entrou no if")
+            
+            let distanciaAlarme: Double = 1 / 111.12
             let latAtual = localAtual.coordinate.latitude
             let lonAtual = localAtual.coordinate.longitude
             
             let latAlarme = localAlarme.coordinate.latitude
             let lonAlarme = localAlarme.coordinate.longitude
             
-            if latAtual - latAlarme <= distanciaAlarme  {
-                if lonAtual - lonAlarme <= distanciaAlarme{
-                    
-                }
+            if ((latAtual >= latAlarme - distanciaAlarme) && (latAtual  <= latAlarme + distanciaAlarme) ) &&
+               ((lonAtual >= lonAlarme - distanciaAlarme) && (lonAtual <= lonAlarme + distanciaAlarme) ) {
+                
+                let texto = "Você está próximo do seu destino"
+                let alerta: UIAlertController = UIAlertController(title: "Alarme", message: texto , preferredStyle: .alert)
+                
+                self.present( alerta, animated: true, completion: nil)
+                
             }
 
         }
@@ -98,7 +115,7 @@ class AlarmeViewController: UIViewController, MKMapViewDelegate, CLLocationManag
             
             mapa.addAnnotation( pino )
             
-            
+            self.localAlarme = CLLocation(latitude: coordenadas.latitude, longitude: coordenadas.longitude)
             
             
         }
